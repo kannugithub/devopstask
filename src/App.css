@@ -1,38 +1,219 @@
 .App {
   text-align: center;
+  
+  height: 100vh;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-form{
+  margin: auto;
+  width: 500px;
+  vertical-align: middle;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding-top: 7rem;
+}
+
+.main-form .inner-form{
+  
+    border-radius: 6px;
+    padding: 0px 0px 15px 0px;
+    border: 1px solid #ccc;
+    /* box-shadow: 2px 2px 34px #00000019; */
+}
+
+.main-form h2 {
+
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-form .input-field {
+
+ display: flex;
+ flex-direction: column;
+ text-align: left;
+ margin-bottom: 10px;
+ padding: 10px 15px 0px 15px;
+  
+}
+
+.main-form .input-field2 {
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 10px 15px 0px 15px;
+   
+ }
+
+.main-form .input-field label{
+
+  padding-bottom: 5px;
+}
+
+.main-form .input-field input{
+
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  padding-left: 5px;
+}
+
+.main-form .input-field input :focus {
+
+  border-color: blue !important;
+}
+
+.main-form .file{
+
+  height: 32px !important;
+  padding-top: 12px;
+}
+
+.main-form button{
+
+  
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: skyblue;
+  font-size: 14px;
+  width: 94%;
+}
+
+
+.main-form .head{
+
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px 0px;
+  background-color: skyblue;
+  border-radius: 6px 6px 0 0;
 }
 
-.App-link {
-  color: #61dafb;
+.main-form .head .link-reset{
+
+  color: blue;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.main-form .error {
+
+  color: red;
+  font-size: 12px
+}
+
+.main-list .top-head{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.main-list {
+
+  width: 600px;
+  margin: auto;
+  padding-top: 7rem;
+}
+
+.main-list table{
+
+  width: 100%;
+  margin-bottom: 20px;
+
+  
+}
+
+
+
+.main-list table tbody tr td :first-child {
+
+  text-align: left;
+}
+
+table, th, td {
+  border: 1px solid #cccccc;
+}
+
+.main-form .btm-sec{
+
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.main-form .btm-sec a{
+
+  text-decoration: none;
+}
+
+/* .main-form .btm-sec button{
+
+  width: 300px;
+
+} */
+
+
+.css-qbdosj-Input {
+  padding: 0px !important;
+  margin: 2px !important;
+}
+
+.main-navbar {
+
+  background-color: skyblue;
+  padding: 0px 30px;
+  position: fixed;
+  width: 100%;
+  
+}
+
+.main-navbar .inner {
+
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  
+}
+
+.main-navbar .inner .left-side h3{
+
+  cursor: pointer;
+}
+
+.main-navbar .inner .right-side ul{
+
+  list-style: none;
+}
+
+.main-navbar .inner .right-side ul {
+  display: flex;
+  gap: 24px;
+}
+
+.main-navbar .inner .right-side ul a{
+
+  text-decoration: none;
+  color: black;
+ 
+}
+
+.main-navbar .inner .right-side ul a:hover {
+
+  /* text-decoration: none; */
+  color: gray;
+ 
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
 }
